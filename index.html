@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Surabhi Rathi | Chartered Accountant</title>
+<meta name="description" content="CA Surabhi Rathi: startup consultancy, tax, fundraising, debt raise and compliances, with finance automation and an entrepreneurial streak. Curiosity with a practical streak.">
+<meta name="theme-color" content="#0F1B2B">
+<meta property="og:title" content="CA Surabhi Rathi">
+<meta property="og:description" content="Curiosity with a practical streak. Startup consultancy, tax, fundraising, debt raise and compliances.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dusk:#0F1B2B;      /* sky after sunset */
+  --dusk-2:#1A2B42;
+  --mist:#EDF0F2;
+  --sun:#FF8F3F;       /* the sun in the hero photo */
+  --ink-muted:#34424F;
+  --on-dark-muted:#C6D1DE;
+  --rule-light:#C9D1D8;
+  --rule-dark:#2D4059;
+  --display:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --text:"Newsreader",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--mist);color:var(--dusk);font:19px/1.65 var(--text)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+p{margin:0 0 12px}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+
+/* buttons */
+.btn{display:inline-block;font:600 15px var(--display);text-decoration:none;padding:12px 20px;border-radius:999px;border:2px solid currentColor}
+.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--dusk)}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+
+/* hero: the sunset does the talking */
+.hero{position:relative;isolation:isolate;color:#fff;height:min(88svh,820px);min-height:560px;display:flex;flex-direction:column}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 68%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(10,20,35,.55) 0%,rgba(10,20,35,.18) 38%,rgba(10,20,35,0) 55%,rgba(15,27,43,.9) 100%)}
+.bar{display:flex;justify-content:space-between;align-items:center;padding-top:16px}
+.bar strong{font:700 18px var(--display)}
+.bar a{font:600 14px var(--display);text-decoration:none;border-bottom:2px solid var(--sun);padding-bottom:1px}
+.hero .wrap{width:100%}
+h1{font:800 clamp(52px,16vw,104px)/.95 var(--display);letter-spacing:-.045em;margin:24px 0 0;text-shadow:0 2px 30px rgba(10,20,35,.35)}
+.role{font:600 clamp(20px,5.5vw,28px)/1.2 var(--display);margin:10px 0 0;text-shadow:0 2px 20px rgba(10,20,35,.4)}
+
+/* dark intro band */
+.band{background:var(--dusk);color:#fff;padding:6px 0 34px}
+.tag{font:500 16px/1.4 var(--display);color:var(--on-dark-muted);margin:0 0 14px}
+.band .lead{font:500 24px/1.35 var(--display);letter-spacing:-.015em;margin:0 0 22px;max-width:28em}
+
+/* about */
+.about{padding:40px 0 36px}
+.about .top{display:grid;grid-template-columns:1fr 104px;gap:18px;align-items:start}
+.statement{font:750 36px/1.05 var(--display);letter-spacing:-.025em;margin:0}
+.arch{position:relative;width:104px;height:138px;margin-right:8px;margin-top:4px}
+.arch::before{content:"";position:absolute;inset:9px -8px -8px 8px;background:var(--sun);border-radius:999px 999px 4px 4px;transform-origin:bottom;animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.arch img{position:relative;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 34%;border-radius:999px 999px 4px 4px}
+@keyframes rise{from{transform:scaleY(.2);opacity:0}}
+.about p.body{margin-top:20px;color:var(--ink-muted)}
+
+/* work */
+.work{background:var(--dusk);color:#fff;padding:38px 0 40px}
+h2{font:750 30px/1.05 var(--display);letter-spacing:-.03em;margin:0 0 12px}
+.work .intro{color:var(--on-dark-muted);margin-bottom:20px}
+.svc{list-style:none;margin:0;padding:0}
+.svc li{padding:14px 0;border-top:1px solid var(--rule-dark)}
+.svc li:last-child{border-bottom:1px solid var(--rule-dark)}
+.svc b{display:block;font:700 24px/1.1 var(--display);letter-spacing:-.02em}
+.svc span{display:block;margin-top:4px;font-size:18px;line-height:1.4;color:var(--on-dark-muted)}
+.also{margin:18px 0 0;font-size:18px;color:var(--on-dark-muted)}
+.also strong{color:#fff;font-weight:600}
+
+/* other side */
+.other{padding:40px 0 42px}
+.other h2{margin-bottom:16px}
+.thread{margin:0 0 16px}
+.thread b{font:700 19px var(--display);letter-spacing:-.01em;display:block;margin-bottom:1px}
+.thread p{margin:0;color:var(--ink-muted);font-size:18px;line-height:1.5}
+.collage{display:grid;grid-template-columns:1.05fr 1fr;grid-template-rows:150px 150px;gap:10px;margin:22px 0 8px}
+.collage img{width:100%;height:100%;object-fit:cover;display:block;border-radius:6px}
+.collage .c1{grid-row:1/3}
+.collage .c1 img{object-position:62% 72%}
+.collage .c2 img{object-position:50% 44%}
+.collage .c3 img{object-position:75% 90%}
+.cap{font-size:16px;font-style:italic;color:var(--ink-muted);margin:0}
+
+/* contact */
+.contact{background:var(--dusk);color:#fff;padding:40px 0 30px}
+.contact h2{font-size:34px;max-width:11em}
+.contact p{color:var(--on-dark-muted);max-width:30em}
+.contact .actions{margin-top:20px}
+.contact .btn:not(.sun){color:#fff;border-color:#5C718B}
+.sign{margin:42px 0 0;padding-top:22px;border-top:1px solid var(--rule-dark);font:500 21px/1.3 var(--display);letter-spacing:-.015em;color:#fff}
+.sign small{display:block;margin-top:14px;font:400 13px var(--text);color:var(--on-dark-muted)}
+
+@media(min-width:640px){
+  body{font-size:19px}
+  .about .top{grid-template-columns:1fr 180px;gap:40px}
+  .arch{width:180px;height:240px}
+  .statement{font-size:34px}
+  .collage{grid-template-rows:230px 230px}
+  .band .lead{font-size:26px}
+}
+@media(prefers-reduced-motion:reduce){.arch::before{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="assets/sunset.jpg" width="1100" height="1467" alt="Surabhi walking on a beach at sunset, seen from behind">
+  <div class="wrap">
+    <div class="bar"><strong>CA Surabhi Rathi</strong><a href="#contact">Contact</a></div>
+    <h1>Surabhi Rathi</h1>
+    <p class="role">Chartered Accountant</p>
+  </div>
+</header>
+
+<div class="band">
+  <div class="wrap">
+    <p class="tag">Business &amp; Finance | Entrepreneurial Explorer</p>
+    <p class="lead">I help founders raise funding, stay compliant and automate their finance work.</p>
+    <div class="actions">
+      <a class="btn sun" href="#contact">Get in touch</a>
+      <a class="btn" href="surabhi-rathi.vcf" download>Save contact</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <div class="top">
+      <p class="statement">Curiosity with a practical streak.</p>
+      <div class="arch"><img src="assets/surabhi-portrait.jpg" width="720" height="857" alt="Portrait of Surabhi Rathi"></div>
+    </div>
+    <p class="body">I’m a Chartered Accountant. I started in audit, M&amp;A and due diligence, and now work in fundraising, strategic finance and the Founder’s Office.</p>
+    <p class="body" style="margin-top:0">I like turning complexity into clarity, and I started Urbano Organics, a microgreens venture, to see business from the entrepreneur’s side.</p>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <h2>How I can help</h2>
+    <p class="intro">Assignment-based and fractional work for founders and leadership teams.</p>
+    <ul class="svc">
+      <li><b>Startup consultancy</b><span>Business plans, financial models, budgets and MIS.</span></li>
+      <li><b>Tax consultancy</b><span>Practical guidance, so tax is planned and never a surprise.</span></li>
+      <li><b>Fundraising</b><span>An investor-ready story, model and documents.</span></li>
+      <li><b>Debt raise</b><span>Lender-ready papers, lender coordination and covenant tracking.</span></li>
+      <li><b>Compliances</b><span>Filings and calendars that stay on time.</span></li>
+    </ul>
+    <p class="also"><strong>Also:</strong> due diligence, project finance, business modelling and finance automation.</p>
+  </div>
+</section>
+
+<section class="other" id="other">
+  <div class="wrap">
+    <h2>Beyond the work</h2>
+    <div class="thread"><b>Urbano Organics</b><p>A microgreens venture that taught me what it takes to build a real business.</p></div>
+    <div class="thread"><b>Smarter systems</b><p>AI and automation that give people more time to think.</p></div>
+    <div class="thread"><b>Smart, controlled farming</b><p>Exploring how to grow food more predictably and build agri ventures that last.</p></div>
+    <div class="collage">
+      <div class="c1"><img src="assets/reading.jpg" width="720" height="960" loading="lazy" alt="Surabhi reading a Murakami novel in a hammock"></div>
+      <div class="c2"><img src="assets/yoga.jpg" width="720" height="960" loading="lazy" alt="Surabhi hanging upside down in an aerial yoga hammock"></div>
+      <div class="c3"><img src="assets/mountains.jpg" width="720" height="960" loading="lazy" alt="Surabhi smiling with mountains behind her"></div>
+    </div>
+    <p class="cap">Books, mountains and the occasional upside down.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let’s talk.</h2>
+    <p>Building something, solving something, or have an idea to share? I’d love to hear from you.</p>
+    <div class="actions">
+      <a class="btn sun" href="mailto:surabhi0908@gmail.com">Email</a>
+      <a class="btn" href="tel:+919049486005">Call</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/surabhi-rathi-3147601a6/">LinkedIn</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/surabhi0908?hvrq=aWRzZXExY2tzY3Bp&amp;utm_source=qr">Instagram</a>
+      <a class="btn" href="surabhi-rathi.vcf" download>Save contact</a>
+    </div>
+    <p class="sign">There is always more to a person than their designation. This is a little of mine.</p>
+  </div>
+</section>
+
+</body>
+</html>
