@@ -9,4 +9,5 @@ UPLOAD TO GITHUB PAGES FROM YOUR PHONE
    folder from a desktop/Safari "Request Desktop Site").
 4) Commit changes.
 5) Settings -> Pages -> Deploy from a branch -> main -> /(root) -> Save.
+Surabhi Rathi website
 6) After a minute, open the live link. Tap Call, Email, LinkedIn, Instagram and Save contact to test.
